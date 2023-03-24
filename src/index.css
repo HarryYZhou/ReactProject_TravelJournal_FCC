@@ -1,13 +1,122 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit
+}
+
+.navbar img {
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+
+.navbar p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: #F55A5A;
+  display: flex;
+  height: 55px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.card--img {
+  height: 168px;
+  width: 125px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.card--text {
+  max-height: 168px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card--title {
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.location-logo {
+  height: 14px;
+  width: 10px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.card--country {
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-right: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+
+}
+
+.card--google {
+  font-weight: 400;
+  color: #918E9B;
+  text-decoration-line: underline;
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+
+.card--dates {
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.card--description {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.separator-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.separator {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 2px;
 }
